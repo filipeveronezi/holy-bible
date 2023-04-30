@@ -1,18 +1,16 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Next.js",
+  name: "Holy bible",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Free and open source Bible app - a modern, beautiful, and minimalistic design for an easy-to-use experience.",
   mainNav: [
     {
-      title: "Home",
-      href: "/",
+      title: "Books",
+      href: "/books",
     },
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
+    github: "https://github.com/filipeveronezi/holy-bible",
   },
 }
