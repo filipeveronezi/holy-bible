@@ -91,12 +91,24 @@ module.exports = {
             transform: "translateY(0px)",
           },
         },
+        float: {
+          "0%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-20px)",
+          },
+          "100%": {
+            transform: "translateY(0px)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.5s",
         "fade-down": "fade-down 0.5s",
+        float: "float 6s ease-in-out infinite",
         // Tooltip
         "slide-up-fade": "slide-up-fade 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
         "slide-down-fade": "slide-down-fade 0.3s cubic-bezier(0.16, 1, 0.3, 1)",

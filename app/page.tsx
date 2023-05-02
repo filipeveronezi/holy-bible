@@ -17,16 +17,10 @@ export default async function IndexPage() {
   return (
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="mx-auto flex w-full max-w-[980px] flex-col items-center gap-2 text-center">
-        <h1
-          className="animate-fade-up text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl"
-          style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
-        >
+        <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
           Free and open source <br /> Bible app
         </h1>
-        <p
-          className="animate-fade-up text-lg text-muted-foreground sm:text-xl"
-          style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
-        >
+        <p className="text-lg text-muted-foreground sm:text-xl">
           Experience the timeless wisdom of God&apos;s written Word
           <br />
           <span className="hidden md:inline-block">
@@ -35,10 +29,7 @@ export default async function IndexPage() {
           </span>
         </p>
       </div>
-      <div
-        className="flex animate-fade-up flex-col items-center justify-center gap-4 sm:flex-row"
-        style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
-      >
+      <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
         <Link
           href="/books"
           className={buttonVariants({
@@ -66,11 +57,8 @@ export default async function IndexPage() {
           </span>
         </Link>
       </div>
-      <div
-        className="relative mx-auto mt-10 flex w-max animate-fade-up items-center justify-center"
-        style={{ animationDelay: "0.40s", animationFillMode: "forwards" }}
-      >
-        <div className="relative h-[16rem] w-[16rem] xl:h-[25rem] xl:w-[25rem]">
+      <div className="relative mx-auto mt-10 flex w-max items-center justify-center">
+        <div className="relative h-[20rem] w-[20rem] animate-float xl:h-[25rem] xl:w-[25rem]">
           <Image
             className="object-contain"
             src="/3d-book.png"
@@ -80,26 +68,38 @@ export default async function IndexPage() {
           ></Image>
         </div>
         <div className="absolute inset-x-0 top-0 mx-auto flex w-full flex-col items-center gap-3 text-center text-xs font-bold italic">
-          <span className="ml-[2rem] w-max max-w-[20rem] rounded-full border border-muted/70 bg-muted/40 px-10 py-3 backdrop-blur-sm lg:ml-[20rem]">
+          <Link
+            href="/books/psalms/119"
+            className="ml-[2rem] w-max max-w-[20rem] rounded-full border border-muted/70 bg-muted/40 px-10 py-3 backdrop-blur-sm transition-all hover:[text-shadow:_0_0_20px_rgb(255_255_255)] lg:ml-[20rem]"
+          >
             &quot;Your Word is a light for my feet,
             <br />
             ever shining on my way.&quot;
-          </span>
-          <span className="mr-[2rem] w-max max-w-[20rem] rounded-full border border-muted/70 bg-muted/40 px-10 py-3 backdrop-blur-sm lg:mr-[18rem]">
+          </Link>
+          <Link
+            href="/books/john/17"
+            className="mr-[2rem] w-max max-w-[20rem] rounded-full border border-muted/70 bg-muted/40 px-10 py-3 backdrop-blur-sm transition-all hover:[text-shadow:_0_0_20px_rgb(255_255_255)] lg:mr-[18rem]"
+          >
             &quot;Make them holy by the true Word:
             <br />
             your Word is the true Word.&quot;
-          </span>
-          <span className="ml-[2rem] w-max max-w-[20rem] rounded-full border border-muted/70 bg-muted/40 px-10 py-3 backdrop-blur-sm lg:ml-[15rem]">
+          </Link>
+          <Link
+            href="/books/2-timothy/3"
+            className="ml-[2rem] w-max max-w-[20rem] rounded-full border border-muted/70 bg-muted/40 px-10 py-3 backdrop-blur-sm transition-all hover:[text-shadow:_0_0_20px_rgb(255_255_255)] lg:ml-[15rem]"
+          >
             &quot;All Scripture is given by
             <br />
             inspiration of God...&quot;
-          </span>
-          <span className="mr-[2rem] w-max max-w-[20rem] rounded-full border border-muted/70 bg-muted/40 px-10 py-3 backdrop-blur-sm lg:mr-[16rem]">
+          </Link>
+          <Link
+            href="/books/hebrews/4"
+            className="mr-[2rem] w-max max-w-[20rem] rounded-full border border-muted/70 bg-muted/40 px-10 py-3 backdrop-blur-sm transition-all hover:[text-shadow:_0_0_20px_rgb(255_255_255)] lg:mr-[16rem]"
+          >
             &quot;The Word of God is living
             <br />
             and full of power...&quot;
-          </span>
+          </Link>
         </div>
         <svg
           className="absolute top-0 -z-10 h-full w-full opacity-70 blur-3xl"
