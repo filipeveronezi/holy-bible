@@ -65,6 +65,7 @@ export default async function IndexPage() {
             alt="3D book illustration"
             fill
             sizes="100%"
+            priority
           ></Image>
         </div>
         <div className="absolute inset-x-0 top-0 mx-auto flex w-full flex-col items-center gap-3 text-center text-xs font-bold italic">
