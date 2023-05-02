@@ -46,7 +46,7 @@ export default async function Page({ params }) {
             className={buttonVariants({
               variant: index + 1 === Number(chapter) ? "default" : "outline",
               size: "sm",
-              className: "ml-2 py-4",
+              className: "py-4",
             })}
           >
             {(index + 1).toString().padStart(2, "0")}
@@ -61,9 +61,11 @@ export default async function Page({ params }) {
               <span className="text-xs font-bold text-foreground">
                 {verse.number}
               </span>
-              <p className="inline lg:text-lg" key={verse.number}>
-                {verse.text}
-              </p>
+              <p
+                dangerouslySetInnerHTML={{ __html: verse.text }}
+                className="inline lg:text-lg"
+                key={verse.number}
+              />
             </div>
           ))}
         </div>
