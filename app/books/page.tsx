@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function BooksPage() {
   return (
-    <section className="container my-10 h-full w-full">
+    <section className="container my-10 h-full w-full space-y-10">
       <div className="space-y-5">
         <h1 className="scroll-m-20 text-2xl font-semibold tracking-tight">
           Old testament
