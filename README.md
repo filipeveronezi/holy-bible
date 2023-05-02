@@ -1,23 +1,18 @@
-# next-template
+<h3 align="center">
+  <a href="https://holybible.veronezi.dev">holybible.veronezi.dev</a>
+</h3>
 
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
+<br />
 
-## Usage
 
-```bash
-npx create-next-app -e https://github.com/shadcn/next-template
-```
+<a href="https://www.veronezi.dev">
+  <div align="center">
+    <img src="https://holybible.veronezi.dev/thumbnail.png" />
+  </div>
+</a>
 
-## Features
+<br />
 
-- Radix UI Primitives
-- Tailwind CSS
-- Fonts with `next/font`
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Automatic import sorting with `@ianvs/prettier-plugin-sort-imports`
-- Tailwind CSS class sorting, merging and linting.
-
-## License
-
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+<div align="center">
+  The Holy Bible ⚡ built with <a href="https://nextjs.org">Next.js</a>, <a href="https://ui.shadcn.com">shadcn/ui</a> and <a href="https://www.abibliadigital.com.br">ABíbliaDigital</a>.
+</div>
