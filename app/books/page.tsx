@@ -13,6 +13,7 @@ export default function BooksPage() {
         <div className="mx-auto grid w-full grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6">
           {bibleBooks.oldTestament.map((book) => (
             <Link
+              key={book.slug}
               href={`/books/${book.slug}/1`}
               className={buttonVariants({
                 variant: "secondary",
@@ -31,6 +32,7 @@ export default function BooksPage() {
         <div className="mx-auto grid w-full grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6">
           {bibleBooks.newTestament.map((book) => (
             <Link
+              key={book.slug}
               href={`/books/${book.slug}/1`}
               className={buttonVariants({
                 variant: "secondary",

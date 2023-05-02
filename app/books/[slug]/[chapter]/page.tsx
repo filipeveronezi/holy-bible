@@ -41,6 +41,7 @@ export default async function Page({ params }) {
       <div className="fixed left-0 top-16 flex h-[calc(100vh-4rem)] w-[4rem] flex-col items-center gap-5 overflow-y-auto border-r py-5">
         {[...Array(bookContent.chapters)].map((_, index) => (
           <Link
+            key={index}
             href={`/books/${slug}/${index + 1}`}
             className={buttonVariants({
               variant: index + 1 === Number(chapter) ? "default" : "outline",
@@ -56,7 +57,7 @@ export default async function Page({ params }) {
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">{`${bibleBookNameBySlug[slug]} ${chapter}`}</h1>
         <div className="space-y-2">
           {chapterContent.verses.map((verse) => (
-            <div className="space-x-2">
+            <div key={verse.number} className="space-x-2">
               <span className="text-xs font-bold text-foreground">
                 {verse.number}
               </span>
