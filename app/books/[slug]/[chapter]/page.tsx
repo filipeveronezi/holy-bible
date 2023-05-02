@@ -38,7 +38,7 @@ export default async function Page({ params }) {
 
   return (
     <section className="relative mx-auto w-full max-w-screen-xl gap-2 space-y-10 pb-20 pl-20 pr-6 pt-5 lg:px-0">
-      <div className="fixed left-0 top-16 flex h-[calc(100vh-4rem)] w-[4rem] flex-col items-center gap-5 overflow-y-auto border-r py-5">
+      <div className="fixed left-0 top-16 z-20 flex h-[calc(100vh-4rem)] w-[4rem] flex-col items-center gap-5 overflow-y-auto border-r bg-background py-5">
         {[...Array(bookContent.chapters)].map((_, index) => (
           <Link
             key={index}
