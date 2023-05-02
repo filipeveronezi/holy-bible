@@ -9,6 +9,8 @@ export function SiteFooter() {
           <Link
             href="https://nextjs.org"
             className="underline underline-offset-2 lg:no-underline lg:hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Next.js
           </Link>
@@ -16,6 +18,8 @@ export function SiteFooter() {
           <Link
             href="https://ui.shadcn.com/"
             className="underline underline-offset-2 lg:no-underline lg:hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             shadcn/ui
           </Link>{" "}
@@ -23,6 +27,8 @@ export function SiteFooter() {
           <Link
             href="https://www.abibliadigital.com.br"
             className="underline underline-offset-2 lg:no-underline lg:hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             ABíbliaDigital
           </Link>
