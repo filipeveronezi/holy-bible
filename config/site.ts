@@ -10,6 +10,7 @@ export const siteConfig = {
       href: "/books",
     },
   ],
+  url: "https://holybible.veronezi.dev",
   links: {
     github: "https://github.com/filipeveronezi/holy-bible",
   },

@@ -18,7 +18,7 @@ export default async function IndexPage() {
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="mx-auto flex w-full max-w-[980px] flex-col items-center gap-2 text-center">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
-          Free and open source <br /> Bible app
+          Free and open source <br /> Bible reading app
         </h1>
         <p className="text-lg text-muted-foreground sm:text-xl">
           Experience the timeless wisdom of God&apos;s written Word

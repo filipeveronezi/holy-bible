@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import {
@@ -7,6 +8,17 @@ import {
 import { bibleApiGet } from "@/services/fetchBibleApi"
 
 import { buttonVariants } from "@/components/ui/button"
+
+type Props = {
+  params: { slug: string }
+}
+
+export function generateMetadata({ params }: Props): Metadata {
+  const { slug } = params
+  return {
+    title: bibleBookNameBySlug[slug],
+  }
+}
 
 interface Verse {
   number: number

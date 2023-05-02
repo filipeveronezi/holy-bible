@@ -3,9 +3,13 @@ import { bibleBooks } from "@/content/bibleBooks"
 
 import { buttonVariants } from "@/components/ui/button"
 
+export const metadata = {
+  title: "Books",
+}
+
 export default function BooksPage() {
   return (
-    <section className="mx-auto w-full max-w-screen-xl space-y-10 px-6 py-20">
+    <section className="container my-10 h-full w-full">
       <div className="space-y-5">
         <h1 className="scroll-m-20 text-2xl font-semibold tracking-tight">
           Old testament
